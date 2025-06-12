@@ -3,6 +3,12 @@ body {
 }
 
 h1{
-    color: blanchedalmond;
+    background-color: blanchedalmond;
     margin-left: 20px;
+    margin-right: 1700px;
+}
+h2{
+    background-color: blanchedalmond;
+    margin-left:10px;
+    margin-right: 1600px;
 }
