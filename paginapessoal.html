@@ -1,35 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <link rel="stylesheet" type="text/css" href="estilos/estilo.css" media="screen" />
-  <meta charset="UTF-8">
-    <meta name="description" content="Mini tutorial">
-    <meta name="author" content="João Victor Magevski Calegari - IFES Campus Serra">
-    <meta name="keywords" content="apresentacao, tutorial, ifes, serra">
-</head>
-  <title>Página Pessoal</title>
-<body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Uma página sobre mim">
+        <meta name="author" content="João Victor">
+        <meta name="keywords" content="html,ifes,progweb">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <h1>João Victor</h1>
-  <img src="imagens/avatar.jpeg" alt="meu avatar" width="300" height="300">
-  
-  <h2> Apresentação</h2>
 
-  <p> Olá! Meu nome é <b>João Victor</b> </p>
-  <p>Tenho <i>18 anos</i></p>
-  <p>E estudo no <u>IFES Campus Serra</u></p>
+        <link rel="icon" href="imagens/logoSerra.png" type="image/png">
+        <link rel="stylesheet" href="estilos/estilo.css">
+        <title>João Victor</title>
+    </head>
+    
+    <body>
+        
+        <header>
+            <h1>João Victor Magevski Calegari</h1>
+            <nav>
+                <a href="#intro">Introdução</a>
+                <a href="#interesses">Interesses</a>
+                <a href="#minhaInstituicao">Minha Instituição</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </header>
 
-  
-  <h2> Interesses e Curiosidades</h2>
-  <em>Eu gosto de vôlei, gosto de ir à praia para surfar e ouvir música.</em>
-  <blockquote>Eu tenho curso de inglês completo pela UFES.</blockquote>
-  <p>Eu gosto de comer <del>legumes</del> chocolate</p>
-  <h2>Minha Instituição</h2>
-  <a href="https://serra.ifes.edu.br/" target="_blank">
-    <img src="imagens/serra.png" alt="imagem da portaria da o Campus Serra">
-  </a>
-  <a href="tutorial/mini tutorial.html">tutorial<br> </a>
-  <a href="curriculo.html">currículo<br> </a>
+        <div class="layout">
+            <aside>
+                <nav class="nav-aside">
+                    <a href="tutorial/mini tutorial.html">Tutorial</a>
+                    <a href="https://serra.ifes.edu.br/" target="_blank">Ifes</a>
+                    <a href="curriculo.html">Curriculo</a>
+                </nav>
+            </aside>
+            
+            <main>
+                <section id="imgAvatar">
+                    <img src="imagens/avatar.jpeg" alt="Avatar que representa o dono da página">
+                </section>
+                
+                <section class="box" id="intro">
+                    <h2>Apresentação</h2>
+                    <p>Olá! Meu nome é <b>João Victor, </b>tenho <i>18 anos</i> e estudo no <u>IFES Campus Serra</u> </p>
+                </section>
 
-  </body>
+                <section class="box" id="hob">
+                    <h2>Meus Hobbies</h2>
+                    <p>Eu gosto de vôlei, gosto de ir à praia para surfar e ouvir música.</em>
+                      <blockquote>Eu tenho curso de inglês completo pela UFES.</blockquote>
+                      <p>Eu gosto de comer <del>legumes</del> chocolate</p>
+                </section>
+
+                <section class="center" id="minhaInstituicao">
+                    <h2 id="instituicao">Minha Instituição</h2>
+                    <a href="https://serra.ifes.edu.br/" target="_blank">
+                        <img src="imagens/serra.png" alt="imagem da portaria da o Campus Serra">
+                    </a>
+                </section>
+            </main>
+        </div>
+
+        <footer>
+            <a href="tutorial/mini tutorial.html">Tutorial HTML <br></a>
+            <a href="curriculo.html">Meu Currículo</a>
+        </footer>
+    </body>
 </html>
