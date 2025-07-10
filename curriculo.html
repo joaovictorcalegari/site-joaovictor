@@ -5,45 +5,106 @@
   <meta charset="UTF-8">
   <title>Perfil - João Victor Magevski Calegari</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
-    }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  .container-principal {
+    width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: #3498db;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .left {
+    flex: 2;
+  }
+
+  .right {
+    flex: 1;
+    text-align: left;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    padding: 10px;
+  }
+
+  .div1, .div2, .div3, .div4, .div5, .div6 {
+    margin-bottom: 20px;
+  }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  ul li {
+    margin-bottom: 6px;
+  }
+
+  @media screen and (max-width: 768px) {
     .container-principal {
-      width: 600px;
-      margin: 20px auto;
+      width: 90%;
       padding: 20px;
-      border: 1px solid #000000; /* borda fina */
-    }
-
-    .div1, .div2, .div3, .div4, .div5, .div6 {
-      padding: 10px;
-      margin-bottom: 10px;
     }
 
     .container {
-      display: flex;
-      gap: 10px;
-    }
-
-    .left {
-      flex: 2;
-    }
-
-    .right {
-      flex: 1;
+      flex-direction: column;
     }
 
     img {
-      width: 100%;
-      max-width: 150px;
-      border-radius: 10px;
+      max-width: 100%;
     }
-
-    .section-title {
-      font-weight: bold;
-    }
+  }
   </style>
 </head>
 <body>
@@ -56,9 +117,9 @@
         <div class="div1">
           <h2>João Victor Magevski Calegari</h2>
           <img src="imagens/avatar.jpeg" alt="Foto de Perfil" width="250" height="210">
-          <p>Instagram: @calegari_joao</p>
-          <p>19 anos</p>
-          <p>joaovictor.calegari10@gmail.com</p>
+          <p><strong>Instagram:</strong> @calegari_joao</p>
+          <p><strong>Idade:</strong> 19 anos</p>
+          <p><strong>E-mail:</strong> joaovictor.calegari10@gmail.com</p>
         </div>
 
         <!-- DIV 2 -->
